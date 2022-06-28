@@ -7,7 +7,7 @@ export default function Header() {
             <Image src="/logo.ico" height="65" width="65" />
             <div className="items-center">
                 <h1 className="font-bold absolute left-24 top-8 text-3xl pl-15">
-                    Polygon Name Service
+                    Phillip Name Service
                 </h1>
                 <div className="absolute right-4 top-10">
                     <ConnectButton moralisAuth={false} />
