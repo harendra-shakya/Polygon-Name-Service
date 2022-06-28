@@ -16,7 +16,10 @@ export default function Home() {
     const [record, setRecord] = useState("");
     const dispatch = useNotification();
     const chainString = chainId ? parseInt(chainId).toString() : "31337";
-    const contractAddress = contractAddresses[chainString].PNS[0];
+    let contractAddress;
+    if (chainString === "80001") {
+        contractAddress = contractAddresses[chainString].PNS[0];
+    }
 
     const fetchMints = async () => {
         try {
